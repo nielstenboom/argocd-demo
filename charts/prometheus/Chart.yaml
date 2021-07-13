@@ -1,0 +1,4 @@
+dependencies:
+- name: prometheus
+  version: 16.13.0
+  repository: https://prometheus-community.github.io/helm-charts
