@@ -1,3 +1,5 @@
+name: prometheus
+description: A Helm chart for Kubernetes
 dependencies:
 - name: prometheus
   version: 16.13.0
