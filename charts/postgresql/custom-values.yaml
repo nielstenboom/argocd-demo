@@ -1,2 +1,4 @@
-service:
-  port: 5433
+image:
+  tag: 12.7.0
+
+
