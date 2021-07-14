@@ -1,2 +1,8 @@
 ## Fill in common variables here
 environment: dev
+
+prometheus:
+  enabled: false
+
+ingress-nginx:
+  enabled: true
