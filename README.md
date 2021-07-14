@@ -42,3 +42,4 @@ kubectl apply -f app-of-apps/platform-apps.yaml
 # URLs
 - https://argoproj.github.io/argo-cd/operator-manual/cluster-bootstrapping/
 - https://argoproj.github.io/argo-cd/user-guide/best_practices/
+- Could use this for image tag updating: https://github.com/argoproj-labs/argocd-image-updater
