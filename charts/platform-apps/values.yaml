@@ -1,8 +1,13 @@
 ## Fill in common variables here
 environment: dev
+repoURL: https://github.com/nielstenboom/argocd-demo.git
+targetRevision: master
 
 prometheus:
   enabled: false
 
 ingress_nginx:
+  enabled: true
+
+fluentd:
   enabled: true

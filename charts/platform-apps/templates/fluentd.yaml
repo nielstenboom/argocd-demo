@@ -1,8 +1,8 @@
-{{ if .Values.prometheus.enabled }}
+{{ if .Values.fluentd.enabled }}
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prometheus
+  name: fluentd
   namespace: argocd
 spec:
   project: default
@@ -17,8 +17,8 @@ spec:
 
   source:
     repoURL: {{ .Values.repoURL }}
-    targetRevision: master
-    path: charts/prometheus
+    targetRevision: {{ .Values.targetRevision }}
+    path: charts/fluentd
     # helm:
     #   valueFiles:
     #   - values.yaml

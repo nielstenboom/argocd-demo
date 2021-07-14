@@ -16,7 +16,7 @@ spec:
       - CreateNamespace=true
 
   source:
-    repoURL: https://github.com/nielstenboom/argocd-demo.git
+    repoURL: {{ .Values.repoURL }}
     targetRevision: master
     path: charts/ingress-nginx
     # helm:
