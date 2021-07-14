@@ -20,4 +20,4 @@ spec:
     path: charts/postgresql
     helm:
       valueFiles:
-      - values.yaml
+      - custom-values.yaml
