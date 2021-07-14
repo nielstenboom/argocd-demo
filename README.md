@@ -30,11 +30,7 @@ kubectl apply -f apps/guestbook-helm.yaml
 
 ## Deploy single opensource chart
 ```
-kubectl apply -f apps/prometheus.yaml
-```
-or
-```
-kubectl apply -f apps/ingress-nginx.yaml
+kubectl apply -f apps/postgresql.yaml
 ```
 
 ## Deploy app-of-apps (group of applications)

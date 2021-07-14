@@ -3,6 +3,8 @@ environment: dev
 repoURL: https://github.com/nielstenboom/argocd-demo.git
 targetRevision: master
 
+
+# enable more of them on better hardware
 prometheus:
   enabled: false
 
@@ -10,7 +12,7 @@ ingress_nginx:
   enabled: false
 
 fluentd:
-  enabled: true
+  enabled: false
 
 redis:
   enabled: true
