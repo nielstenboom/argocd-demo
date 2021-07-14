@@ -39,7 +39,7 @@ kubectl apply -f apps/ingress-nginx.yaml
 
 ## Deploy app-of-apps (group of applications)
 ```
-
+kubectl apply -f app-of-apps/platform-apps.yaml
 ```
 
 
