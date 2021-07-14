@@ -1,21 +1,23 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: guestbook
+  name: prometheus
   namespace: argocd
 spec:
   project: default
   destination:
     server: https://kubernetes.default.svc
-    namespace: guestbook
+    namespace: ingress-nginx
     
-  source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
-    targetRevision: master
-    path: guestbook
-
   syncPolicy:
     automated: {}
     syncOptions:
       - CreateNamespace=true
-  
+
+  source:
+    repoURL: https://github.com/nielstenboom/argocd-demo.git
+    targetRevision: master
+    path: charts/ingress-nginx
+    # helm:
+    #   valueFiles:
+    #   - values.yaml

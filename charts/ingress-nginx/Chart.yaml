@@ -1,0 +1,7 @@
+name: ingress-nginx
+description: A Helm chart for Kubernetes
+version: 0.0.1
+dependencies:
+- name: ingress-nginx
+  version: 3.34.0
+  repository: https://kubernetes.github.io/ingress-nginx
