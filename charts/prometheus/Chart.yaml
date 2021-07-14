@@ -2,6 +2,6 @@ name: prometheus
 description: A Helm chart for Kubernetes
 version: 0.0.1
 dependencies:
-- name: prometheus
-  version: 14.3.1
+- name: kube-prometheus-stack
+  version: 16.13.0
   repository: https://prometheus-community.github.io/helm-charts
