@@ -1,0 +1,7 @@
+name: postgresql
+description: A Helm chart for Kubernetes
+version: 0.0.1
+dependencies:
+- name: postgresql
+  version: 10.5.2
+  repository: https://charts.bitnami.com/bitnami

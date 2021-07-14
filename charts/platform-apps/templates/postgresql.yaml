@@ -1,0 +1,25 @@
+{{ if .Values.postgresql.enabled }}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: postgresql
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: postgresql
+    
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true
+
+  source:
+    repoURL: {{ .Values.repoURL }}
+    targetRevision: {{ .Values.targetRevision }}
+    path: charts/postgresql
+    # helm:
+    #   valueFiles:
+    #   - values.yaml
+{{ end }}

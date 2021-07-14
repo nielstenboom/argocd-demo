@@ -1,0 +1,25 @@
+{{ if .Values.redis.enabled }}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: redis
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: redis
+    
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true
+
+  source:
+    repoURL: {{ .Values.repoURL }}
+    targetRevision: {{ .Values.targetRevision }}
+    path: charts/redis
+    # helm:
+    #   valueFiles:
+    #   - values.yaml
+{{ end }}
