@@ -1,4 +1,4 @@
-{{ if .Values.ingress-nginx.enabled }}
+{{ if .Values.ingress_nginx.enabled }}
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

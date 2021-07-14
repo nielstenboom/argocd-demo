@@ -4,5 +4,5 @@ environment: dev
 prometheus:
   enabled: false
 
-ingress-nginx:
+ingress_nginx:
   enabled: true
