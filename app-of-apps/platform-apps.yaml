@@ -9,6 +9,9 @@ spec:
     server: https://kubernetes.default.svc
     namespace: argocd
 
+  syncPolicy:
+    automated: {}
+
   source:
     repoURL: https://github.com/nielstenboom/argocd-demo.git
     targetRevision: master
