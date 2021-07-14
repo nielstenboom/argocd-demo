@@ -18,6 +18,6 @@ spec:
     repoURL: https://github.com/nielstenboom/argocd-demo.git
     targetRevision: master
     path: charts/postgresql
-    # helm:
-    #   valueFiles:
-    #   - values.yaml
+    helm:
+      valueFiles:
+      - values.yaml
