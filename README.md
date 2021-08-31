@@ -48,3 +48,5 @@ kubectl apply -f app-of-apps/platform-apps.yaml
 
 
 
+
+
