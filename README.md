@@ -45,3 +45,5 @@ kubectl apply -f app-of-apps/platform-apps.yaml
 - Could use this for image tag updating: https://github.com/argoproj-labs/argocd-image-updater
 
 
+
+
